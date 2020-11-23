@@ -222,8 +222,10 @@ function handleChoicesChange(e) {
 function handleChoices(e) {
 	let query = "div.max-feedback, div.duplicate-feedback, div.blank-feedback, div.null-feedback";
 	removeWarnings(query);
-		
+	
 	let choiceField = e.target;
+	
+	
 	let choice = choiceField.value;
 	let id;
 	let node = document.querySelector("#choices-row");
@@ -247,7 +249,9 @@ function handleChoices(e) {
 		return;
 	}
 
-	if(e.type === "click" || e.type === "keyup") {
+	//Possibly redundant check here
+	/* if(e.type === "click" || e.type === "keyup") { */
+	if(e.type === "change" || e.type === "keyup") {
 		addChoice(choice, choiceField);
 	}
 }
