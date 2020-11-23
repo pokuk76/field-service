@@ -1,0 +1,146 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+label {
+	font-weight: 700;
+}
+
+input, select {
+  padding: 4px 0px 4px 2px;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin-top: 4px;
+}
+
+#main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#heading {
+  color:#1f6d93;
+  background: #d9eef7;
+  font-family: monospace, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(198, 236, 243);
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+
+#title {
+  margin-bottom: 0;
+}
+
+#form-container {
+  color: black;
+  font-family: sans-serif, monospace;
+  font-weight: 600;
+  border: 2px solid rgb(198, 236, 243);
+  border-radius: 0 0 5px 5px;
+  padding: 0 10% 2% 10%;
+  width: 100%;
+}
+
+#field-builder-form {
+	padding: 2% 0 2% 0;
+}
+
+div.form-group-spacing {
+	margin-top: 2em;
+}
+
+#label, #default, #choices {
+	box-shadow: 0.5px 0.5px 1.5px 0.5px rgba(125, 125, 125, 0.2) inset;
+}
+
+#type-group, #choices-group, #action-group {
+	padding: 0;
+	margin: 0;
+}
+
+.help-text {
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 0.75em;
+	margin: 0 0 0 25%;
+	display: none;
+}
+
+#added-choices {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-height: 100px;
+	overflow-y: auto;
+}
+
+.choice {
+  background: hsl(212, 100%, 50%);
+  color: #ECF4FB;
+  border-radius: 2px;
+  margin: 5px 10px 5px 0px;
+  padding-left: 10px;
+}
+
+.btn-remove-choice span {
+	color: #ECF4FB;
+	margin: 0;
+}
+.btn-remove-choice span:hover {
+	color: #FF0000;
+}
+
+#save {
+	margin-right: 2%;
+}
+
+#cancel {
+	color: red;
+	margin-left: 2%;
+}
+#cancel:hover {
+	cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+	#heading {
+		width: 60%;
+	}
+	
+	#form-container {
+		width: 60%;
+		padding: 2% 10% 2% 5%;
+	}
+	
+	#label, #default, #choices {
+		display: inline;
+	}
+
+	#type {
+		display: inline;
+	}
+	
+	#choices {
+		width: 52%;
+	}
+	
+	.help-text {
+		display: inline;
+	}
+}
+
+@media screen and (max-width: 574px) {
+	#add-choice-button {
+		margin-top: 3%;
+	}
+}
+
+
